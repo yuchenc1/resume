@@ -1,0 +1,156 @@
+\documentclass{res} 
+\newsectionwidth{0pt}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\usepackage[margin=0.27in]{geometry}
+
+\usepackage{indentfirst}
+
+\setlist[itemize]{leftmargin=*}
+\linespread{1.08}
+
+\begin{document}
+
+\name{\Large{Yuchen Cao}}
+\address{yuchenc1@cs.cmu.edu $\cdot$ 412-478-9381 $\cdot$ https://www.linkedin.com/in/yuchen-cao-cmu $\cdot$ https://github.com/yuchenc1}
+
+\begin{resume}
+
+\vspace{-1.0em}
+
+\begin{section}{EDUCATION}
+\vspace{1.5em}
+\fullline
+\vspace{-0.5em}
+
+\textbf{Carnegie Mellon University}, School of Computer Science, Language Technologies Institute \hfill {Pittsburgh, PA}\\
+\textbf{Master of Science in Biotechnology Innovation and Computation} \hfill {Sep 2017 - May 2019} 
+%\begin{itemize}[leftmargin=0.3in]
+%\item{Courses: Neural Networks for Natural Language Processing, Speech Recognition and Understanding, Introduction to Machine Learning (Phd-level), Machine Learning with Large Datasets, Deep Reinforcement Learning and Control, Structure Prediction}
+%\end{itemize}
+
+\vspace{-0.7em}
+
+\textbf{Zhejiang University}, Mathematics Department \hfill {Zhejiang, China} \\
+\textbf{Bachelor of Science in Applied Mathematics} \hfill {Sep 2013 - Jul 2017} 
+%\begin{itemize}[leftmargin=0.3in]
+%\item{Courses: Database System, Artificial Intelligence, Operating System, Computer Architecture, Compiler Theory, Object-Oriented Programming, Computer Graphics, Computer Networks, Probability and Statistics}
+%\end{itemize}
+
+\end{section}
+
+\vspace{-0.5em}
+ 
+\begin{section}{PROFESSIONAL EXPERIENCE}
+\vspace{1.5em}
+\fullline
+\vspace{-0.5em}
+
+\textbf{Snowflake Computing $\mid$ Service Runtime Team} \hfill {San Mateo, CA}\\
+\textit{\textbf{Software Engineer}} \hfill {Aug 2018 - Present}
+\vspace{-0.6em}
+
+\textbf{Uber Technology $\mid$ Software Network Team} \hfill {San Francisco, CA}\\
+\textit{\textbf{Software Engineer Intern}} \hfill {May 2018 - Aug 2018}
+\begin{itemize}[leftmargin=0.3in]
+\item{Built the staging environment for discovery, health check and traffic routing services using Go. Prototyped a custom dns resolver watching updates to staging zookeeper.} 
+\vspace{-0.4em}
+\item{Improved the lint check tool for traffic group configuration of all services at Uber using Python, making the jenkins check and related service 10 times faster.}
+\vspace{-0.4em}
+\item{Implemented resolver and balancer using grpc for Uber’s own naming service client.}
+\end{itemize}
+
+\vspace{-0.6em}
+
+\textbf{Yitu Technology $\mid$ Developing Engineer Team} \hfill {Shanghai, China} \\
+\textbf{\textit{Software Engineer Intern}} \hfill {Feb 2017 - Jun 2017}
+\begin{itemize}[leftmargin=0.3in]
+\item{Developed GPU computing in face retrieval and comparison using C++.}
+\vspace{-0.4em}
+\item{Implemented LevelDB in car recognition platform, which supports approximate matching with more than 300 QPS.}
+\vspace{-0.4em}
+\item{Applied FFmpeg into transferring video stream for real time camera monitoring.}
+\vspace{-0.4em}
+\end{itemize}
+
+\end{section}
+
+\vspace{-0.5em}
+
+\begin{section}{PROJECTS}
+\vspace{1.5em}
+\fullline
+\vspace{-0.5em}
+
+\textbf{Risk-oriented Relational Database} \hfill {Aug 2018 - Dec 2018} 
+\begin{itemize}[leftmargin=0.3in]
+\item{Implemented extendable hash-table, lru cache, buffer pool manager, b plus tree index, lock manager with two phase locking, log manager and recovery for a relational database.}
+\end{itemize}
+
+\vspace{-0.6em}
+
+\textbf{Twitter Analytics Web Service} \hfill {Feb 2018 - May 2018}
+\begin{itemize}[leftmargin=0.3in]
+\item{Built a high-performance multi-tier web service on AWS with limited budget using JAVA handling more than 20k RPS.}
+\vspace{-0.4em}
+\item{Implemented ETL on JSON Twitter data set (1 TB) using MapReduce on GCP.}
+\vspace{-0.4em}
+\item{Designed schema and optimized MySQL and HBase databases to support large scale and strong consistent read/write query under multithreading design.}
+\end{itemize}
+
+\vspace{-0.6em}
+
+\textbf{Lung Nodule Analysis} \hfill {Feb 2018 - May 2018}
+\begin{itemize}[leftmargin=0.3in]
+\item{Developed an automatic lung nodule detection algorithm using 888 CT scans from LUNA 2016 dataset.}
+\vspace{-0.4em}
+\item{Implemented the actor-critic algorithm for reinforcement learning framework for non-greedy decoding dependency parsing.}
+\vspace{-0.4em}
+\item{Loaded and reprocessed unbalanced raw data using SimpleITK.}
+\vspace{-0.4em}
+\item{Modified C3D neural network using 8 3D convolutional and 6 pooling layers using PyTorch.}
+\vspace{-0.4em}
+\item{Trained the model in 30 epochs and delivered 92\% accuracy on the test data.}
+\end{itemize}
+
+\vspace{-0.6em}
+
+\textbf{Malloc, Shel, Proxy Labl} \hfill {May 2017 - Aug 2017}
+\begin{itemize}[leftmargin=0.3in]
+\item{Implemented my own malloc function with high utility and throughput.}
+\vspace{-0.4em}
+\item{Realized a tiny shell supporting job control and I/O redirection.}
+\vspace{-0.4em}
+\item{Developed a small http proxy with cache and multithred handling SIGPIPE.}
+\end{itemize}
+
+\vspace{-0.6em}
+
+\textbf{Concussion Detection Using Temporal Analysis of Speech} \hfill {Jul 2016 - Aug 2016}
+\textit{Research Exprience with Prof Christian Poellabauer in University of Notre Dame}
+\begin{itemize}[leftmargin=0.3in]
+\item{Took speech recordings from athletes and extracted temporal metrics from speech data using Python, CMUSphinx, Kaldi.}
+\vspace{-0.4em}
+\item{Applied machine learning analysis with Logistic Regression and Neural Network into finding patterns that are indicative of a concussion using Matlab with the accuracy of 96.05\%.
+}
+\end{itemize}
+
+\end{section}
+
+\vspace{-0.5em}
+
+\begin{section}{SKILLS}
+\vspace{1.5em}
+\fullline
+\vspace{0.4em}
+\begin{itemize}[leftmargin=0.3in]
+\item[] {\textbf{Languages}: GO, JAVA, Python, C++/C, Bash, Matlab, SQL, R, LaTeX} \\
+\vspace{-1.7em}
+\item[] {\textbf{Frameworks}: Linux, Git, Zookeeper, Kafka, GRPC, MapReduce}
+\end{itemize}
+
+\end{section}
+
+\end{resume}
+
+\end{document}
